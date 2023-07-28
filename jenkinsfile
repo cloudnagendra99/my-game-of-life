@@ -7,14 +7,14 @@ pipeline {
     triggers {
         pollSCM('* * * * *')
     }
-    tools {
-        JDK 'JDK_17'
+    tools 
+        jdk 'JAVA_8'
     
     }
     stages {
         stage('source code') {
             steps {
-                git url:'https://github.com/cloudnagendra99/my-game-of-life.git' , 
+                git url: 'https://github.com/cloudnagendra99/my-game-of-life.git', 
                     branch: 'master'
 
             }
