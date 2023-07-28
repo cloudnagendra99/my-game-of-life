@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('source code') {
             steps {
-                git url: 'https://github.com/cloudnagendra99/my-game-of-life.git' , 
+                git url:'https://github.com/cloudnagendra99/my-game-of-life.git' , 
                     branch: 'master'
 
             }
