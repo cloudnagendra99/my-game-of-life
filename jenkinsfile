@@ -23,7 +23,7 @@ pipeline {
         }
         stage('build package') {
             steps {
-                sh script: "mvn ${GOAL}"
+                sh script: "mvn ${params.GOAL}"
                 
             }
             
